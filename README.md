@@ -32,8 +32,8 @@ Working with Grid will be easy if you open the dev tool and see the Grid lines. 
 
 ### Links
 
-- Live Site URL: [Testimonials grid section](https://ohsorrow.github.io/)
-- Solution: [Solution on Frontend Mentor]()
+- Live Site URL: [Testimonials grid section](https://ohsorrow.github.io/testimonials-grid-section/)
+- Solution: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/testimonials-grid-section-using-css-grid-9NXLk1yYJL)
 
 ### Built with
 

@@ -66,6 +66,11 @@ article blockquote {
   font-size: 1rem;
 }
 
+.title h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .title p {
   opacity: 50%;
 }
