@@ -1,0 +1,124 @@
+/* IMPORT FONT FROM GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+/* DECLARE COLORS */
+
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+/* CSS  BASIC RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: var(--Light-grayish-blue);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  width: 42px;
+  height: auto;
+  border: 3px solid rgba(255, 255, 255, 0.301);
+}
+
+main {
+  padding: 4rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+article {
+  border-radius: 10px;
+  padding: 2.25rem;
+  box-shadow: 0px 25px 50px -50px var(--Very-dark-blackish-blue);
+}
+
+article div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+article blockquote {
+  opacity: 70%;
+  line-height: 1.25rem;
+}
+
+.title b {
+  font-size: 1rem;
+}
+
+.title p {
+  opacity: 50%;
+}
+
+.bold-quote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.25rem 0;
+}
+
+.daniel {
+  background-color: var(--Moderate-violet);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+  color: whitesmoke;
+}
+
+.jonathan {
+  background-color: var(--Very-dark-grayish-blue);
+  color: whitesmoke;
+}
+
+.jeanette {
+  background-color: white;
+  color: var(--Very-dark-grayish-blue);
+}
+
+.patrick {
+  background-color: var(--Very-dark-blackish-blue);
+  color: var(--Light-gray);
+}
+
+.kira {
+  background-color: white;
+  color: var(--Very-dark-grayish-blue);
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15% 10%;
+  }
+
+  .daniel,
+  .patrick {
+    grid-column: span 2;
+  }
+
+  .kira {
+    grid-column-start: 4;
+    grid-row: 1 / 3;
+  }
+}
