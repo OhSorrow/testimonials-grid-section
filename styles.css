@@ -40,7 +40,7 @@ img {
 }
 
 main {
-  padding: 4rem 1.5rem;
+  margin: 3rem 1rem;
   display: grid;
   gap: 1.5rem;
 }
@@ -114,7 +114,7 @@ article blockquote {
 @media screen and (min-width: 1024px) {
   main {
     grid-template-columns: repeat(4, 1fr);
-    padding: 15% 10%;
+    max-width: 1440px;
   }
 
   .daniel,
